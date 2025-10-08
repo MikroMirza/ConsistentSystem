@@ -1,0 +1,2 @@
+C:\Users\user\Source\Repos\ConsistentSystem\WcfService1\obj\Debug\WcfService1.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\ConsistentSystem\WcfService1\obj\Debug\WcfService1.csproj.CoreCompileInputs.cache

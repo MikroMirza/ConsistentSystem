@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1.csproj", "{1D52253C-7A5B-47B2-8E60-093BFC42B45B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfSensorService", "WcfSensorService.csproj", "{1D52253C-7A5B-47B2-8E60-093BFC42B45B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCoordinator", "..\ServiceCoordinator\ServiceCoordinator.csproj", "{FF195113-29C0-468D-BB81-84BDE26A6C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceClient", "..\ServiceClient\ServiceClient.csproj", "{C896E980-CCAB-45C7-A789-76FD687BB2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{1D52253C-7A5B-47B2-8E60-093BFC42B45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D52253C-7A5B-47B2-8E60-093BFC42B45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D52253C-7A5B-47B2-8E60-093BFC42B45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF195113-29C0-468D-BB81-84BDE26A6C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF195113-29C0-468D-BB81-84BDE26A6C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF195113-29C0-468D-BB81-84BDE26A6C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF195113-29C0-468D-BB81-84BDE26A6C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C896E980-CCAB-45C7-A789-76FD687BB2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C896E980-CCAB-45C7-A789-76FD687BB2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C896E980-CCAB-45C7-A789-76FD687BB2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C896E980-CCAB-45C7-A789-76FD687BB2EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
