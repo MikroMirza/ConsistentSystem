@@ -92,6 +92,7 @@ namespace WcfSensorService
             }
             finally
             {
+                Thread.Sleep(5000);
                 lock (_alignLock)
                 {
                     _isAligning = false;
@@ -108,6 +109,9 @@ namespace WcfSensorService
                 while (true)
                 {
                     await Task.Delay(rnd.Next(1000, 10000)); // 1-10 seconds
+                    if (_isAligning)
+                        continue;
+
                     double temp = Math.Round(15 + rnd.NextDouble() * 20, 2);
                     using (var c = GetDatabaseConnection())
                     {
