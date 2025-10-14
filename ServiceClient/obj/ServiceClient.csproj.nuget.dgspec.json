@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj": {}
+    "C:\\Users\\senja\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj": {
+    "C:\\Users\\senja\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj",
+        "projectUniqueName": "C:\\Users\\senja\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj",
         "projectName": "ServiceClient",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceClient\\obj\\",
+        "projectPath": "C:\\Users\\senja\\Source\\Repos\\ConsistentSystem\\ServiceClient\\ServiceClient.csproj",
+        "packagesPath": "C:\\Users\\senja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\senja\\source\\repos\\ConsistentSystem\\ServiceClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\senja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +68,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

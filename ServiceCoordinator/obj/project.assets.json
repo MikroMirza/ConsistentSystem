@@ -22,13 +22,17 @@
           "ref/netstandard2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Private.ServiceModel.dll": {}
+          "lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "System.Reflection.DispatchProxy/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Reflection.DispatchProxy.dll": {}
+          "ref/netstandard2.0/System.Reflection.DispatchProxy.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll": {}
@@ -41,7 +45,9 @@
           "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -56,7 +62,9 @@
       "System.Security.Cryptography.Cng/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "ref/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
@@ -74,7 +82,9 @@
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
-          "ref/netcoreapp2.1/_._": {}
+          "ref/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {}
@@ -93,7 +103,9 @@
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Cryptography.Xml.dll": {}
+          "ref/netstandard2.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {}
@@ -105,7 +117,9 @@
           "System.Security.AccessControl": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {}
+          "ref/netstandard2.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Permissions.dll": {}
@@ -117,7 +131,9 @@
           "Microsoft.NETCore.Platforms": "2.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -143,7 +159,9 @@
           "ref/netstandard2.0/System.ServiceModel.Duplex.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.ServiceModel.Duplex.dll": {}
+          "lib/netstandard2.0/System.ServiceModel.Duplex.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "System.ServiceModel.Http/4.7.0": {
@@ -156,7 +174,9 @@
           "ref/netstandard2.0/System.ServiceModel.Http.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.ServiceModel.Http.dll": {}
+          "lib/netstandard2.0/System.ServiceModel.Http.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "System.ServiceModel.NetTcp/4.7.0": {
@@ -169,7 +189,9 @@
           "ref/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
+          "lib/netstandard2.0/System.ServiceModel.NetTcp.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "System.ServiceModel.Primitives/4.7.0": {
@@ -182,8 +204,12 @@
           "ref/netcoreapp2.1/System.ServiceModel.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll": {},
-          "lib/netcoreapp2.1/System.ServiceModel.dll": {}
+          "lib/netcoreapp2.1/System.ServiceModel.Primitives.dll": {
+            "related": ".pdb"
+          },
+          "lib/netcoreapp2.1/System.ServiceModel.dll": {
+            "related": ".Primitives.pdb"
+          }
         }
       },
       "System.ServiceModel.Security/4.7.0": {
@@ -196,7 +222,9 @@
           "ref/netstandard2.0/System.ServiceModel.Security.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.ServiceModel.Security.dll": {}
+          "lib/netstandard2.0/System.ServiceModel.Security.dll": {
+            "related": ".pdb"
+          }
         }
       }
     }
@@ -749,19 +777,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\senja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceCoordinator\\ServiceCoordinator.csproj",
+      "projectUniqueName": "C:\\Users\\senja\\source\\repos\\ConsistentSystem\\ServiceCoordinator\\ServiceCoordinator.csproj",
       "projectName": "ServiceCoordinator",
-      "projectPath": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceCoordinator\\ServiceCoordinator.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Source\\Repos\\ConsistentSystem\\ServiceCoordinator\\obj\\",
+      "projectPath": "C:\\Users\\senja\\source\\repos\\ConsistentSystem\\ServiceCoordinator\\ServiceCoordinator.csproj",
+      "packagesPath": "C:\\Users\\senja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\senja\\source\\repos\\ConsistentSystem\\ServiceCoordinator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\senja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -781,6 +809,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -810,7 +843,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -819,7 +853,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

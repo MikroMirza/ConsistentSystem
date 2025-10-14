@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace ServiceClient
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var client1 = new ServiceReference1.SensorServiceClient();
             var client2 = new ServiceReference2.SensorServiceClient();
@@ -18,12 +20,12 @@ namespace ServiceClient
 
                 try
                 {
-                    double[] latest =
-                    {
-                        client1.GetLatest(),
-                        client2.GetLatest(),
-                        client3.GetLatest()
-                    };
+                    Task<double>[] getLatestTasks = { client1.GetLatestAsync(), client2.GetLatestAsync(), client3.GetLatestAsync() };
+
+
+                    Console.Write("Dobavljanje vrednosti...");
+                    double[] latest = await Task.WhenAll(getLatestTasks);
+                    Console.Write("\r");
 
                     double avg = (latest[0] + latest[1] + latest[2]) / 3.0;
                     Console.WriteLine($"Senzor 1: {latest[0]}, Senzor 2: {latest[1]}, Senzor 3: {latest[2]}, Prosek: {avg}");
@@ -36,10 +38,10 @@ namespace ServiceClient
                     else
                     {
                         Console.WriteLine($"PROBLEM, manje od 2 senzora su u intervalu od ±5 od proseka");
-                        client1.SetLatest(avg);
-                        client2.SetLatest(avg);
-                        client3.SetLatest(avg);
-                        Console.WriteLine($"Zahtev za poravnanje poslat");
+                        Console.Write($"Vrsi se poravnanje...");
+                        Task[] tasks = { client1.SetLatestAsync(avg), client2.SetLatestAsync(avg), client3.SetLatestAsync(avg) };
+                        await Task.WhenAll(tasks);
+                        Console.WriteLine($"\rPoravnanje uspesno zavrseno");
                     }
                 }
                 catch (Exception ex)

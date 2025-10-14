@@ -26,10 +26,10 @@ namespace ServiceCoordinator
                 double avg = temps.Average();
                 Console.WriteLine($"[Koordinator] Prosek poslednjih merenja: {avg:F2}°C");
 
-
+                Console.Write("[Koordinator] Zapoceto poravnanje");
                 Task[] setTempTasks = { sensor1.SetLatestAsync(avg), sensor2.SetLatestAsync(avg), sensor3.SetLatestAsync(avg) };
                 await Task.WhenAll(setTempTasks);
-                Console.WriteLine("[Koordinator] Temperatura svih senzora ažurirana na prosek.\n");
+                Console.WriteLine("\r[Koordinator] Temperatura svih senzora ažurirana na prosek.\n");
 
                 Thread.Sleep(60000);
             }
