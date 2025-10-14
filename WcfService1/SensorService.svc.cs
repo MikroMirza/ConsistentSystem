@@ -157,16 +157,6 @@ namespace WcfSensorService
 
             host.AddServiceEndpoint(typeof(ISensorService), new BasicHttpBinding(), "");
 
-            var smb = new ServiceMetadataBehavior { HttpGetEnabled = true };
-            host.Description.Behaviors.Add(smb);
-
-            // MEX endpoint
-            host.AddServiceEndpoint(
-                ServiceMetadataBehavior.MexContractName,
-                MetadataExchangeBindings.CreateMexHttpBinding(),
-                "mex"
-            );
-
             host.Open();
 
             Console.WriteLine($"[Sensor-{port}] sluša na {baseAddress}");
